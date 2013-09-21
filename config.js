@@ -34,7 +34,7 @@ config = {
             debug: false
         },
         server: {
-            host: '127.0.0.1',
+            host: 'http://radiant-hamlet-9965.herokuapp.com/',
             port: process.env.PORT
         }
     },
