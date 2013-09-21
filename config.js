@@ -8,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://my-ghost-blog.com',
+        url: 'http://radiant-hamlet-9965.herokuapp.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -34,7 +34,7 @@ config = {
             debug: false
         },
         server: {
-            host: 'http://radiant-hamlet-9965.herokuapp.com/',
+            host: '127.0.0.1',
             port: process.env.PORT
         }
     },
