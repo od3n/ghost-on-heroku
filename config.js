@@ -8,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://ghostblog.herokuapp.com',
+        url: 'http://ghostonheroku.herokuapp.com',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
