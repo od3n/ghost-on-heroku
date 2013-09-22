@@ -8,7 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://ghostonheroku.herokuapp.com',
+        url: 'http://192.241.222.62:2368',
 
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -29,13 +29,13 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+                filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
         },
         server: {
-            host: '0.0.0.0',
-            port: process.env.PORT
+            host: '192.241.222.62',
+            port: '2368'
         }
     },
 
@@ -43,7 +43,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'http://ghostonheroku.herokuapp.com',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -53,7 +53,7 @@ config = {
             debug: false
         },
         server: {
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             port: process.env.PORT
         }
     },
